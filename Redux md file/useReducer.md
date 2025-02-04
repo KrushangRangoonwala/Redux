@@ -1,4 +1,4 @@
-
+# prac 00
 ![alt text](image-7.png)
 ![alt text](image-6.png)
 ![alt text](image-2.png)
@@ -12,10 +12,16 @@
 ![alt text](image-11.png)
 ![alt text](image-10.png)
 
-
+# prac 01
 ![alt text](image-18.png)
 ![alt text](image-17.png)
 ![alt text](image-16.png)
 ![alt text](image-15.png)
+![alt text](image-20.png)
 ![alt text](image-14.png)
+ # prac02
+----
+![alt text](image-22.png)
 
+![alt text](image-23.png)
+![alt text](image-24.png)
