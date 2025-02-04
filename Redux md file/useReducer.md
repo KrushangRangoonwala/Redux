@@ -25,3 +25,24 @@
 
 ![alt text](image-23.png)
 ![alt text](image-24.png)
+
+# prac03 : Add redux devTools in chrome
+1. Add redux devTools extension 
+
+2. Add following package
+```
+npm i @redux-devtools/extension
+```
+
+3. Add in store.jsx
+```javascript
+import { composeWithDevTools } from '@redux-devtools/extension';
+```
+
+4. Create store like this
+```javascript
+let store = createStore(taskReducer, composeWithDevTools());
+```
+
+5. Now in your website, open `inspact`  >> select `Redux`
+![alt text](image-25.png)
