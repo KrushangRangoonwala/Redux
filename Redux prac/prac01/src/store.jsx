@@ -8,13 +8,6 @@ let initialState = {
     task: []
 };
 
-function addTask(val) {   // action creator function
-    return { type: ADD_TASK, payload: val };
-}
-
-function deleteTask(i) {   // action creator function
-    return { type: DELETE_TASK, payload: i };
-}
 
 let taskReducer = (state = initialState, action) => {
     switch (action.type) {
@@ -43,22 +36,17 @@ let store = createStore(taskReducer);
 console.log("store ", store);
 console.log(store.getState());
 
-//   store.dispatch({ type: ADD_TASK, payload: 'asd asd asd' });
-store.dispatch(addTask('123 123 123'));
+  store.dispatch({ type: ADD_TASK, payload: 'asd asd asd' });
 console.log(store.getState());
-//   store.dispatch({ type: ADD_TASK, payload: 'fgh fgh fgh' });
-store.dispatch(addTask('456 456 456'));
+  store.dispatch({ type: ADD_TASK, payload: 'fgh fgh fgh' });
 console.log(store.getState());
-//   store.dispatch({ type: ADD_TASK, payload: 'qwe qwe qwe' });
-store.dispatch(addTask('890 890 890'));
+  store.dispatch({ type: ADD_TASK, payload: 'qwe qwe qwe' });
 console.log(store.getState());
 
 console.log('Delete task : ');
-// store.dispatch({ type : DELETE_TASK, payload: '1'})
-store.dispatch(deleteTask(1));
+store.dispatch({ type : DELETE_TASK, payload: '1'})
 console.log(store.getState());
-//   store.dispatch({ type : DELETE_TASK, payload: '1'})
-store.dispatch(deleteTask(1));
+  store.dispatch({ type : DELETE_TASK, payload: '1'})
 console.log(store.getState());
 
 
