@@ -62,7 +62,4 @@ store.dispatch(deleteTask(1));
 console.log(store.getState());
 
 
-export default store;
-
-
 
