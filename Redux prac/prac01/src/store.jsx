@@ -8,11 +8,11 @@ let initialState = {
     task: []
 };
 
-function addTask(val) {   // action creator function
+export function addTask(val) {   // action creator function
     return { type: ADD_TASK, payload: val };
 }
 
-function deleteTask(i) {   // action creator function
+export function deleteTask(i) {   // action creator function
     return { type: DELETE_TASK, payload: i };
 }
 
@@ -40,26 +40,26 @@ let taskReducer = (state = initialState, action) => {
 }
 
 let store = createStore(taskReducer);
-console.log("store ", store);
-console.log(store.getState());
+// console.log("store ", store);
+// console.log(store.getState());
 
-//   store.dispatch({ type: ADD_TASK, payload: 'asd asd asd' });
-store.dispatch(addTask('123 123 123'));
-console.log(store.getState());
-//   store.dispatch({ type: ADD_TASK, payload: 'fgh fgh fgh' });
-store.dispatch(addTask('456 456 456'));
-console.log(store.getState());
-//   store.dispatch({ type: ADD_TASK, payload: 'qwe qwe qwe' });
-store.dispatch(addTask('890 890 890'));
-console.log(store.getState());
+// //   store.dispatch({ type: ADD_TASK, payload: 'asd asd asd' });
+// store.dispatch(addTask('123 123 123'));
+// console.log(store.getState());
+// //   store.dispatch({ type: ADD_TASK, payload: 'fgh fgh fgh' });
+// store.dispatch(addTask('456 456 456'));
+// console.log(store.getState());
+// //   store.dispatch({ type: ADD_TASK, payload: 'qwe qwe qwe' });
+// store.dispatch(addTask('890 890 890'));
+// console.log(store.getState());
 
-console.log('Delete task : ');
-// store.dispatch({ type : DELETE_TASK, payload: '1'})
-store.dispatch(deleteTask(1));
-console.log(store.getState());
-//   store.dispatch({ type : DELETE_TASK, payload: '1'})
-store.dispatch(deleteTask(1));
-console.log(store.getState());
+// console.log('Delete task : ');
+// // store.dispatch({ type : DELETE_TASK, payload: '1'})
+// store.dispatch(deleteTask(1));
+// console.log(store.getState());
+// //   store.dispatch({ type : DELETE_TASK, payload: '1'})
+// store.dispatch(deleteTask(1));
+// console.log(store.getState());
 
 
 export default store;
