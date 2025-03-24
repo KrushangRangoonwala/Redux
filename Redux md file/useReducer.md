@@ -98,3 +98,29 @@ let store = createStore(
 ![alt text](image-34.png)
 ![alt text](image-35.png)
 ![alt text](image-37.png) npm package need to install
+
+---
+### Redux Thunk - by technical thapa
+
+![alt text](image-38.png)
+
+**setps :**
+```
+npm  i redux-thunk
+```
+
+
+- Below is simple action creator
+```javascript
+export function fetchTask(val) {   // action creator function
+    return { type: FETCH_TASKS, payload: val };
+}
+``` 
+
+
+- center a div (verticaaly , horizontally and both)
+- sample code for navbar 
+    + LHS home, section, and category dropdown
+    + RHS round profile image,  
+        + on click it opens a menu that have change password and logout options
+        + it should toggle by clicking on profile picture
